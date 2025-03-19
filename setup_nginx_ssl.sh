@@ -102,6 +102,6 @@ fi
 # Obtain and Install SSL Certificate via Certbot
 ###############################
 echo "Obtaining SSL certificate for $DOMAIN..."
-certbot --nginx -d "$DOMAIN" -d "www.$DOMAIN"
+certbot --nginx -d "$DOMAIN" 
 
 echo "Reverse proxy configuration complete for $DOMAIN."
